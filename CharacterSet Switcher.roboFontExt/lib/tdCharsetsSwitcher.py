@@ -5,7 +5,6 @@
 
 from vanilla import *
 from mojo.UI import *
-from robofab.world import CurrentFont
 from defconAppKit.windows.baseWindow import BaseWindowController
 
 
@@ -30,7 +29,7 @@ class CharsetsSwitcherWindow(BaseWindowController):
 		charsetName = self.w.cbCharsetsList.get()
 		font.lib['public.glyphOrder'] = getCharacterSets()[charsetName]
 		font.glyphOrder = font.lib['public.glyphOrder']
-		print 'CharacterSet switched to', charsetName
+		print('CharacterSet switched to', charsetName)
 
 
 CharsetsSwitcherWindow()
