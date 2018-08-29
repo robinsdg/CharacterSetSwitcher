@@ -5,6 +5,7 @@
 
 from vanilla import *
 from mojo.UI import *
+from fontParts.world import CurrentFont
 from defconAppKit.windows.baseWindow import BaseWindowController
 
 
